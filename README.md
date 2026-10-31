@@ -24,7 +24,21 @@
 
 1. **Назва інструменту ШІ:** Gemini (Google)
 2. **Мета використання:** Автоматизація створення структури коду Python для симулятора IoT-датчиків, генерація скрипту навчання ML моделі та створення інструкцій для виконання через Git Bash.
-3. **Текстовий запит (промпт):** *"Створи проєкт для Практичної роботи 9.1 (Варіант 1: Smart Building Energy Prediction) з використанням команд Git Bash..."*
+3. **Текстовий запит (промпт):** *"Traceback (most recent call last):
+
+  File "C:\Users\user\iot_ml_energy_prediction\predict.py", line 57, in <module>
+
+    run_realtime_inference()
+
+  File "C:\Users\user\iot_ml_energy_prediction\predict.py", line 46, in run_realtime_inference
+
+    predicted_energy = model.predict(latest_telemetry)[0]
+
+                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+  File "C:\Users\user\iot_ml_energy_prediction\venv\Lib\site-packages\sklearn\ensemble\_forest.py", line 1065, in predict
+
+    X = self._validate_X_predict(X)"*
 4. **Які фрагменти згенерованого контенту увійшли до роботи:** 
    - Скрипт генерації даних (`src/iot_simulator.py`);
    - Скрипт навчання та feature engineering (`src/train_model.py`);
